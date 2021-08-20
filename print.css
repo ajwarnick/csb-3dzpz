@@ -1,0 +1,122 @@
+@page {
+  /* size: ; */
+  margin: 0.325in 0in;
+  /* padding: 0.25in; */
+  /* padding-bottom: 1in; */
+  /* border: 0.25in solid red; */
+  /* -webkit-print-color-adjust: exact !important; */
+}
+
+body {
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Kaeru-Kaeru";
+  max-width: unset;
+  text-align: left;
+  page-break-inside: avoid;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1.17rem;
+}
+
+h5 {
+  font-size: 1.17rem;
+}
+
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after {
+  content: "";
+  display: block;
+  height: 100px;
+  margin-bottom: -100px;
+}
+
+p {
+  /* columns: 2; */
+  max-width: unset;
+  margin-left: unset;
+  margin-right: unset;
+  orphans: 2;
+  widows: 2;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: square;
+  max-width: unset;
+  margin-left: unset;
+  margin-right: unset;
+}
+
+div.meta {
+  height: 8.5in;
+}
+
+div#syllabus {
+  display: block;
+  overflow: unset;
+  border: unset;
+
+  columns: 2;
+  column-gap: 40px;
+  height: unset;
+  width: 100vw;
+  max-height: unset;
+  align-items: unset;
+
+  page-break-after: always;
+}
+
+div#syllabus > * {
+  min-width: unset;
+}
+
+div#syllabus > div {
+  /* -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid; */
+}
+
+#grading + div {
+  display: block;
+  grid-template-columns: unset;
+}
+
+div.test {
+  position: absolute;
+  top: -0.25in;
+  bottom: -0.125in;
+  left: -0.125in;
+  width: 0.25in;
+  background-color: red;
+}
+
+#grading + div {
+  display: block;
+
+  padding-left: 0;
+  padding-right: 0;
+}
